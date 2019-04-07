@@ -1,0 +1,19 @@
+To be able to call the lamda expressions, 
+we need something called functional interfaces
+
+A functional interface is an interface that contains only one abstract method. 
+They can have only one functionality to exhibit
+A functional interface can have any number of default methods( or static methods). 
+
+
+Runnable, ActionListener, Comparable, Callable
+are some of the examples of functional interfaces.
+
+Runnable ->   run() method
+Callable -> call() method
+ActionListener -> actionPerformed() method
+Comparable ->  compareTo() method
+
+-------------------------------------------------------------------------
+@FunctionalInterface annotation ->>>>>  To indicate explicitly that an interface is a 
+										functional interface to compiler.

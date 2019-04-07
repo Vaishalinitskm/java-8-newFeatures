@@ -1,0 +1,37 @@
+Introduction:
+
+FSirst language having this feature:  
+  	LISP, 
+  	other include 
+  		C, C++, C#.NET, etc.
+ 
+ 
+  1. Lamda Expressions enables functional programming in java.
+  2. To allow and send the procedures and behaviors in and as parameters to function calls.
+  3. To write concise code.
+  4. To use API's very easily and effectively.
+  5. To enable parallel processing we need lamda expressions.
+  
+  
+Lamda exprssions are anonymous functions
+ 					- No name
+ 					- No modifier
+ 					- No return type
+ 					
+ 					
+How to write lamda exp:
+		- Just write a normal method and then remove all the return type, modifiers
+		 and put ->, then we have lamda expresstions
+		 
+		 
+		- note:: if 1 statement, can remove {}
+				 if 1 param, can remove ()
+				 if data type of param can be judged by compiler, can remove data type as well
+				 if data type of return type can also be inferred by the compiler, then
+				 can remove the  return keyword
+				 
+How to be able to use them:  Using Functional Interfaces
+				 
+				 
+  
+ 

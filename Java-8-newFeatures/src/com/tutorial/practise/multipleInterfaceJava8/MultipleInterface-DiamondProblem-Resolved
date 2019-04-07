@@ -1,0 +1,48 @@
+
+/**
+ * Test diamond problem.
+ * 
+ * 1. In java 8 with additonal default method declarations.
+ * 
+ * 
+ * A -> Interface, a() -> default method a of A
+ * B -> Interface, a() -> default method a of B
+ * P -> Parent Interface of A and B , b() -> default method b of P
+ * C -> C is the concrete class implementing both A and B
+ * 
+ * 
+ * -> Doesn't work for below situation
+ * ------------------------------------------------------------
+ * 
+ * A -> a(){}   B -> a(){}
+ * 
+ * If C implements A, B and calls C.a() then 
+ * gives 'Unresolved compilation error' bcz of ambiguity
+ * 
+ * 
+ * ->  Works if method a() is explicitly overriden by C Interface
+ * ------------------------------------------------------------
+ * 
+ * 
+ * ->  Works if explicity call the a() method of a particular interface
+ * 	  by calling using A.super.a() or B.super.a()
+ * ------------------------------------------------------------
+ * 
+ * 
+ * ->  Works also for below diamond situation
+ * ------------------------------------------------------------
+ * 		      P      - b(){} 
+ * 		  /		  \
+ * 	     /         \
+ *      A  Diamond   B  - b() is not redeclared in neither A nor B
+ *      \          /
+ *       \        /
+ *            C      - C.b() will work since compiler knows its not redeclared
+ *           			and declared only in parent interface
+ *     
+ * 
+ * 
+ * 
+ * @author Vaishali
+ *
+ */
